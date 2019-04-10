@@ -1,0 +1,112 @@
+
+setup.c,101
+char* usage 12,180
+char* pub_file 31,987
+char* msk_file 32,1015
+parse_args(35,1052
+main(73,1823
+
+common.c,288
+init_aes(19,315
+aes_128_cbc_encrypt(38,752
+aes_128_cbc_decrypt(71,1489
+fopen_read_or_die(104,2211
+fopen_write_or_die(115,2346
+suck_file(126,2489
+suck_file_str(144,2736
+suck_stdin(160,2951
+spit_file(177,3140
+void read_cpabe_file(189,3320
+write_cpabe_file(224,4023
+die(250,4603
+
+keygen.c,173
+char* usage 14,228
+char*  pub_file 48,1749
+char*  msk_file 49,1770
+char** attrs 50,1791
+char*  out_file 52,1813
+comp_string(55,1849
+parse_args(61,1928
+main(119,2977
+
+test-lang.c,11
+main(8,86
+
+dec.c,170
+char* usage 12,183
+char* pub_file 44,1678
+char* prv_file 45,1700
+char* in_file 46,1722
+char* out_file 47,1744
+int   keep 50,1822
+parse_args(57,1935
+main(135,3682
+
+enc.c,165
+char* usage 12,188
+char* pub_file 29,968
+char* in_file 30,988
+char* out_file 31,1008
+int   keep 32,1028
+char* policy 34,1049
+parse_args(37,1073
+main(93,2121
+
+common.h,30
+#define CPABE_VERSION 29,746
+
+cpabe.h,60
+#define NUM_ATTR_BITS 12,204
+#define CPABE_VERSION 27,660
+
+policy_lang.y,1103
+	uint64_t value;15,200
+	int bits;16,217
+sized_integer_t;18,262
+	int k;22,297
+	char* attr;23,358
+	GPtrArray* children;24,427
+cpabe_policy_t;26,508
+cpabe_policy_t* final_policy 28,525
+	char* str;46,1197
+	uint64_t nat;47,1209
+  sized_integer_t* sint;48,1224
+	cpabe_policy_t* tree;49,1249
+	GPtrArray* list;50,1272
+result:result67,1454
+number:number69,1493
+policy:policy72,1618
+arg_list:arg_list88,2669
+expint(97,2936
+flexint(116,3325
+policy_free(128,3466
+leaf_policy(143,3699
+kof2_policy(156,3896
+kof_policy(171,4191
+bit_marker(192,4701
+eq_policy(208,4964
+bit_marker_list(221,5235
+flexint_leader(243,5793
+cmp_policy(279,6488
+lt_policy(325,7891
+gt_policy(331,7988
+le_policy(337,8085
+ge_policy(344,8195
+char* cur_string 350,8289
+#define PEEK_CHAR 352,8312
+#define NEXT_CHAR 353,8370
+yylex(356,8433
+yyerror(435,9627
+#define POLICY_IS_OR(440,9697
+#define POLICY_IS_AND(441,9796
+merge_child(444,9896
+simplify(465,10274
+cmp_tidy(484,10704
+tidy(503,11125
+format_policy_postfix(516,11371
+actual_bits(546,11864
+parse_attribute(563,12165
+parse_policy_lang(623,13602
+
+policy_lang.h,0
