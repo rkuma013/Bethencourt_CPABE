@@ -1,4 +1,4 @@
-1. We use the 30 copy of the same file for encryption and deception and it is named as file1.pdf, file2.pdf,…..,file30.pdf. 
+1. We use the 30 copy of the same file for encryption and deception and it is named as file1.pdf, file2.pdf,…...,file30.pdf. 
 
 2. The script for Keygen is written in the file “keygen_time.sh”. We generate key for 30 users namely raj1_priv_key to raj30_priv_key. You can read more about key generation at the link: http://acsc.cs.utexas.edu/cpabe/cpabe-keygen.html
 
