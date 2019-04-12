@@ -7,7 +7,6 @@ This is a **C** based implementation of CIphertext-Policy Attribute Based Encryp
 - Install the following:
 
   ```
-  ​```
   sudo apt-get install m4
   sudo apt-get install flex
   sudo apt-get install bison
@@ -17,9 +16,8 @@ This is a **C** based implementation of CIphertext-Policy Attribute Based Encryp
   ```
 
   ```
-  ​```
   
-  ​```
+  
   cd pbc-0.5.14/
   ls
   # configure with pbc flags
@@ -27,14 +25,13 @@ This is a **C** based implementation of CIphertext-Policy Attribute Based Encryp
   sudo make
   sudo make install
   
-  ​```
-  ​```
+  
   cd libbswabe-0.9/
   ls
   sudo ./configure -with-pbc-include=/usr/local/include/pbc -with-pbc-lib=/usr/local/lib
   sudo make LDFLAGS="-lgmp -lpbc -lcrypto -L/usr/lib/x86_64-linux-gnu -lglib-2.0 -lbswabe -lgmp"
   sudo make install
-  ​```
+  
   ```
 
 
